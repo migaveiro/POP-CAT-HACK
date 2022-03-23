@@ -1,0 +1,18 @@
+Open popcat
+Click F12
+Go to console
+You will copy and past the code below this instructions 
+After the "}, 0);" you will put a number at right, like 259.
+Click Enter 2 times and close console and its done :)
+
+
+var event = new KeyboardEvent('keydown', {
+	key: 'g',
+	ctrlKey: true
+});
+
+setInterval(function(){
+	for (i = 0; i < 100; i++) {
+		document.dispatchEvent(event);
+	}
+}, 0);
